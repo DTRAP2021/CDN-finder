@@ -134,7 +134,6 @@ def Find_With_Headers(response):
 
     return status
 
-
 def Find_CDN_for_domain(domain):
 
     (IP_list, IP_Status) = Normal_DNS(domain)
@@ -177,7 +176,9 @@ def Find_CDN_for_domain(domain):
                     print("Cannot distinguish with Headers ")
                 
 
-
+def Pop_up_menu():
+    domain = input("enter the domain name: \n")
+    Find_CDN_for_domain(domain)
 
 #### load the values for features
 CNAME_values = Read_keys_values("Features/CNAME.txt")
@@ -185,9 +186,8 @@ reverse_DNS_values = Read_keys_values("Features/Reverse_DNS.txt")
 HTTP_header_server = Read_keys_values("Features/Server_header.txt")
 HTTP_header =  Read_keys_values("Features/HTTP_headers.txt")
 
+Pop_up_menu()
 
-domain = input("enter the domain name: \n")
-Find_CDN_for_domain(domain)
 
 
 
