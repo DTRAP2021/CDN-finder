@@ -35,7 +35,7 @@ There are some subdomains that obviously need valid CA; however, we do not have 
 - Null certificates (both in SAN and CN field) 
 - Revoked certificate 
 
-Obviously, we cannot share the valid certificates and their private key; nevertheless, we have added the guide on how to issue each of them.  
+Obviously, we cannot share the valid certificates and their private key; nevertheless, we have added the guide on how to issue each of them (See [This file](https://github.com/DTRAP2021/CDN-finder/blob/master/Back-end/cdn-tests.ga/Extra_certs.md)).  
 
 Visit [`badssl.com`](https://badssl.com/) and their GitHub page [`badssl-github`](https://github.com/chromium/badssl.com) related to them. 
 
